@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>E-Commerce</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+
+</head>
+<body>
+    <body>
+        <!-- Barra de Envío Gratis -->
+        <div class="bg-black text-white text-center py-2 fw-semibold">
+            FREE SHIPPING ON ORDERS OVER $65
+        </div>
+    
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+            <div class="container">
+                <!-- Logo -->
+                <a class="navbar-brand" href="#">LOGO</a>
+    
+                <!-- Botón de menú en dispositivos pequeños -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Menú de navegación -->
+<div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+    <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="./index.html">Inicio</a></li>
+        <a class="nav-link" href="./pages/allproducts.html">All Products</a></li>
+        <a class="nav-link" href="./pages/giftcard.html">GIFT CARD</a></li>
+        <li class="nav-item"><a class="nav-link" href="./pages/about.html">About</a></li>
+
+
+    </ul>
+</div>
+
+    
+    
+                <!-- Íconos de búsqueda y carrito alineados a la derecha -->
+                <div class="d-flex align-items-center ms-auto">
+                    <a href="#" class="me-3">
+                        <img src="./assets/img/buscador.svg" alt="Buscar" width="25">
+                    </a>
+                    <a href="#">
+                        <img src="./assets/img/tienda.svg" alt="Carrito" width="25">
+                    </a>
+                </div>
+            </div>
+        </nav>
+    
+  <!-- Hero Section -->
+    <header class="hero-section bg-black text-white py-5">
+        <div class="container">
+        <div class="row align-items-center">
+            <!-- Texto -->
+            <div class="col-lg-6 d-flex flex-column gap-3">
+                <h1 class="hero-title">Style and Quality <br> Handmade</h1>
+                
+                <button type="button" class="hero btn btn-custom" 
+                    style="background-color: #7C6829; color: white; border-radius: 12px; width: 150px; height: 45px; font-size: 16px;">
+                    SHOP NOW
+                </button>
+                
+
+
+            </div>
+            <!-- Imagen -->
+            <div class="col-lg-6">
+                <img src="./assets/img/portadahero.png" alt="Hero Image" class="img-fluid hero-image">
+            </div>
+        </div>
+        </div>
+    </header>
+
+<main>
+
+</main>
+
+<!-- Best Sellers -->
+<section class="bestSeller py-5" style="background-color: black;">
+    <div class="container text-center">
+        <h2 class="text-white fw-semibold display-5 mb-3">BEST SELLERS</h2> 
+        <p class="text-white mx-auto mb-4" style="max-width: 600px; font-size: 18px; line-height: 1.6;">
+            Discover our best-selling models, chosen for their style and quality. 
+            Find the perfect pair to elevate your look with a touch of elegance.
+        </p> 
+
+        <!-- Botón con Bootstrap -->
+        <a href="#" class="btn shop-now-btn">
+            Shop Now <span class="arrow">&gt;</span>
+        </a>
+
+        <!-- Contenedor de tarjetas -->
+        <div class="row justify-content-center gy-4 mt-5">
+            <!-- Card 1 -->  
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card text-center shadow-lg bg-white border-0 rounded animate-card">
+                    <img src="./assets/img/korean.jpg" class="card-img-top" alt="Bull">
+                    <div class="card-body p-4 text-start">
+                        <h5 class="card-title text-uppercase fw-bold">Bull</h5>
+                        <p class="card-text fw-medium text-muted fs-5">$50</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card text-center shadow-lg bg-white border-0 rounded animate-card">
+                    <img src="./assets/img/Óculos de sol VANLINKER 90s Retro Oval Polarizados UV400 Pretos.jpg" class="card-img-top" alt="Dark">
+                    <div class="card-body p-4 text-start">
+                        <h5 class="card-title text-uppercase fw-bold">Dark</h5>
+                        <p class="card-text fw-medium text-muted fs-5">$75</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card text-center shadow-lg bg-white border-0 rounded animate-card">
+                    <img src="./assets/img/redvelvent.png" class="card-img-top" alt="Mat">
+                    <div class="card-body p-4 text-start">
+                        <h5 class="card-title text-uppercase fw-bold">Mat</h5>
+                        <p class="card-text fw-medium text-muted fs-5">$30</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card text-center shadow-lg bg-white border-0 rounded animate-card">
+                    <img src="./assets/img/suny.png" class="card-img-top" alt="Sunny">
+                    <div class="card-body p-4 text-start">
+                        <h5 class="card-title text-uppercase fw-bold">Sunny</h5>
+                        <p class="card-text fw-medium text-muted fs-5">$50</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Estilos -->
+<style>
+    .shop-now-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 20px;
+        font-weight: 500;
+        color: white;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    .shop-now-btn .arrow {
+        transition: transform 0.3s ease;
+        font-size: 22px;
+    }
+
+    .shop-now-btn:hover {
+        color: #B29F6E !important;
+    }
+
+    .shop-now-btn:hover .arrow {
+        transform: translateX(5px);
+    }
+
+    .bestSeller h5 {
+        color: black;
+        font-size: 22px;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+
+    .bestSeller p {
+        color: black;
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+    /* Estilos de la imagen */
+    .card {
+        overflow: hidden;
+    }
+
+    .card-img-top {
+        height: 280px;
+        object-fit: cover;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .card:hover .card-img-top {
+        transform: scale(1.02);
+    }
+
+    /* Animación de la tarjeta */
+    .animate-card {
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+
+    .animate-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+    }
+</style>
+
+
+
+    <!-- Sección Gift Card -->
+<section class="giftcard py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <!-- Columna de texto -->
+            <div class="col-md-6 d-flex flex-column align-items-start gap-3 p-3 border-dashed rounded-3">
+                <h1>Looking for the <br> perfect gift?</h1>
+                <p class="giftcard-paragraph" style="max-width: 400px; line-height: 1.5;">
+                    A practical and elegant gift, our gift cards will give them the freedom to choose their favorite frames.
+                </p>                
+                <button type="button" class=" Gf btn btn-custom btn-lg"style="background-color: #816D2B; color: white;border-radius: 10px">GIFT CARD ></button>
+                
+
+            </div>
+            <!-- Imagen -->
+            <div class="col-md-6 p-0 d-flex justify-content-end">
+                <img src="./assets/img/giftcardorginal.jpg" alt="Gift Card" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Sección New Collection -->
+<section class="d-flex justify-content-center align-items-center text-center bg-black py-5">
+    <div class="container my-5 px-4 new-collection">
+        <!-- Contenedor principal con columnas responsivas -->
+        <div class="row align-items-center justify-content-center">
+            <!-- Columna de Texto y Botón -->
+            <div class="col-12 col-md-5 text-center text-md-start mb-4 mb-md-0">
+                <h2 class="text-white fw-bold" style="font-size: 36px; font-family: 'Montserrat Alternates', sans-serif; letter-spacing: 0.468px;">
+                    New Collection
+                </h2>
+                <p class="text-white mt-3" style="font-size: 18px; opacity: 0.8;">
+                    Discover our latest eyewear collection, blending elegance with modern design. Find the perfect accessory for any occasion.
+                </p>
+                <button type="button" class="btn btn-lg text-white px-4 mt-3" style="background-color: #816D2B; border-radius: 10px;">
+                    VIEW COLLECTION
+                </button>
+            </div>
+
+            <!-- Columna de Productos -->
+            <div class="col-12 col-md-7 d-flex flex-wrap gap-4 justify-content-center">
+                <div class="card border-0 text-center bg-transparent fade-in" style="width: 250px;">
+                    <div class="image-container">
+                        <img src="./assets/img/Rectangle 29.png" class="img-fluid rounded" alt="Boris">
+                    </div>
+                    <div class="card-body text-white">
+                        <h5 class="fw-semibold">Boris</h5>
+                        <p class="card-text">$150.000</p>
+                    </div>
+                </div>
+                <div class="card border-0 text-center bg-transparent fade-in" style="width: 250px;">
+                    <div class="image-container">
+                        <img src="./assets/img/Rectangle 30.png" class="img-fluid rounded" alt="Milo">
+                    </div>
+                    <div class="card-body text-white">
+                        <h5 class="fw-semibold">Milo</h5>
+                        <p class="card-text">$165.000</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Estilos para imágenes y animación -->
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700&display=swap');
+
+    /* Ajuste de imágenes */
+    .image-container {
+        width: 250px;
+        height: 250px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+    }
+
+    .image-container img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+    }
+
+    /* Animación */
+    .fade-in {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: opacity 1s ease-out, transform 1s ease-out;
+    }
+
+    .fade-in.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+</style>
+
+<!-- Script para activar animación -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const fadeInElements = document.querySelectorAll(".fade-in");
+
+        const fadeInOnScroll = () => {
+            fadeInElements.forEach(el => {
+                if (el.getBoundingClientRect().top < window.innerHeight - 50) {
+                    el.classList.add("visible");
+                }
+            });
+        };
+
+        window.addEventListener("scroll", fadeInOnScroll);
+        fadeInOnScroll();
+    });
+</script>
+
+
+
+
+
+<!-- Sección "The Ideal Accessory" -->
+<section class="accessory-section d-flex align-items-center text-center" style="background: rgba(25, 29, 27, 1); height: 361px; padding: 40px 80px;">
+    <div class="container d-flex justify-content-center">
+        <h2 class="accessory-text text-center" style="color: rgba(212, 175, 55, 0.9); letter-spacing: 2px; max-width: 600px; font-size: 28px; line-height: 1.4;">
+            "The ideal accessory to complement any outfit with style and comfort."
+        </h2>
+    </div>
+</section>
+
+
+
+
+    <!-- Sección Winter Collection -->
+    <section class="winter-collection-section d-flex align-items-center py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Imagen a la izquierda -->
+                <div class="col-md-6 d-flex justify-content-start position-relative">
+                    <img src="./assets/img/modelo.jpg" alt="New Collection" class="img-fluid">
+                    <div class="overlay"></div>
+                </div>
+                <!-- Texto a la derecha -->
+                <div class="col-md-6 text-white text-start">
+                    <h2 class="fw-bold mb-3">Winter Collection</h2>
+                    <p class="lead mb-4">
+                        Discover our winter collection: elegance and exclusivity <br>
+                        that combine style and comfort for this season.
+                    </p>
+                
+                <button type="button" class="winter btn-custom btn-lg" style="background-color: #816D2B; color: white; border-radius: 10px;">BUY NOW</button>
+            </div>
+        </div>
+    </div>
+</section>
+            <!-- Sección de Testimonios -->
+    <section class="Testimonios my-5 text-white" style="background-color: #181919; min-height: 600px; padding: 40px 0;">
+        <div class="container">
+        <div class="row">
+            <!-- Contenido alineado a la izquierda -->
+            <div class="col-md-6 d-flex flex-column align-items-start text-start">
+                <h2>Join Hundreds of Satisfied Users</h2>
+                <p>Join hundreds of people who already enjoy the unmatched style and comfort of our glasses. Discover the difference today!</p>
+            </div>
+        </div>
+
+        <!-- Testimonios -->
+        <div class="row justify-content-center mt-4">
+            <div class="col-12 col-sm-6 col-md-3 p-2">
+                <div class="card bg-light p-3 d-flex flex-column justify-content-between h-100" style="height: 220px; border-radius: 8px;">
+                    <p class="text-muted">❝</p>
+                    <p class="text-black flex-grow-1" style="font-weight: 300;">I loved them! &lt;3</p>
+                    <div class="d-flex align-items-center mt-auto">
+                        <img src="./assets/img/carolina.svg" class="rounded-circle me-2" width="30" height="30" alt="User 1">
+                        <span class="text-black">Carolina Mendez</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-3 p-2">
+                <div class="card bg-light p-3 d-flex flex-column justify-content-between h-100" style="height: 220px; border-radius: 8px;">
+                    <p class="text-muted">❝</p>
+                    <p class="text-black flex-grow-1" style="font-weight: 300;">I'm already thinking about buying others.</p>
+                    <div class="d-flex align-items-center mt-auto">
+                        <img src="./assets/img/natali.opinion.svg" class="rounded-circle me-2" width="30" height="30" alt="User 2">
+                        <span class="text-black">Natali Perez</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-3 p-2">
+                <div class="card bg-light p-3 d-flex flex-column justify-content-between h-100" style="height: 220px; border-radius: 8px;">
+                    <p class="text-muted">❝</p>
+                    <p class="text-black flex-grow-1" style="font-weight: 300;">Everything was great!!</p>
+                    <div class="d-flex align-items-center mt-auto">
+                        <img src="./assets/img/descarga (2).jpg" class="rounded-circle me-2" width="30" height="30" alt="User 3">
+                        <span class="text-black">Justina Delgadillo</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-3 p-2">
+                <div class="card bg-light p-3 d-flex flex-column justify-content-between h-100" style="height: 220px; border-radius: 8px;">
+                    <p class="text-muted">❝</p>
+                    <p class="text-black flex-grow-1" style="font-weight: 300;">Exceptional quality and design.</p>
+                    <div class="d-flex align-items-center mt-auto">
+                        <img src="./assets/img/manopinion 2.svg" class="rounded-circle me-2" width="30" height="30" alt="User 4">
+                        <span class="text-black">James Fulton</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Beneficios -->
+<section class="features py-4" style="background-color: #181919; height: 350px;">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-12 col-md-3 mb-3 mb-md-0">
+                <div class="feature-box">
+                    <img src="../Ecommerce Evelyn/assets/img/material-symbols-light_autorenew-rounded.svg" alt="Easy Returns" width="50">
+                    <h5 class="mt-2">EASY RETURNS</h5>
+                    <p>If you don't like it, you can return it</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-3 mb-3 mb-md-0">
+                <div class="feature-box">
+                    <img src="../Ecommerce Evelyn/assets/img/Vector15%.svg" alt="15% OFF" width="50">
+                    <h5 class="mt-2">15% OFF</h5>
+                    <p>Paying by transfer</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-3 mb-3 mb-md-0">
+                <div class="feature-box">
+                    <img src="../Ecommerce Evelyn/assets/img/Vector.svg" alt="Free Shipping" width="50">
+                    <h5 class="mt-2">FREE SHIPPING</h5>
+                    <p>I received your order quickly</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-3">
+                <div class="feature-box">
+                    <img src="../Ecommerce Evelyn/assets/img/Card.svg" alt="Installments" width="50">
+                    <h5 class="mt-2">3 INTEREST-FREE INSTALLMENTS</h5>
+                    <p>With all the cards</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+    <!-- Newsletter Section -->
+<section class="newsletter-section d-flex flex-column align-items-center">
+    <div class="newsletter-box" >
+        <h2 class="fw-bold">Subscribe to our newsletter</h2>
+        <p>and be among the first to hear about new arrivals, events and special offers.</p>
+        <form>
+            <div class="mb-3">
+                <input type="email" class="form-control" placeholder="Email address*" required>
+            </div>
+            <div class="mb-3 form-check d-flex align-items-center">
+                <input type="checkbox" class="form-check-input" id="subscribeCheck">
+                <label class="form-check-label ms-2" for="subscribeCheck">Yes, subscribe me to your newsletter.</label>
+            </div>
+            <button type="button" class=" newsletter btn-custom btn-lg " style="background-color: #816D2B; color: white; border-radius: 4px;height: 43px;padding: 10px 27px;">Submit</button>
+        </form>
+    </div>
+</section>
+
+<footer class="footer-section text-white" style="background: #181919; padding: 64px 64px 32px 64px;">
+    <div class="container">
+        <div class="row">
+            <!-- Columna Logo -->
+            <div class="col-md-4">
+                <h3>LOGO</h3>
+            </div>
+
+            <!-- Columna de Links -->
+            <div class="col-md-4">
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white text-decoration-none">Privacy Policy</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Terms of Use</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Columna Redes Sociales -->
+            <div class="col-md-4">
+                <div class="d-flex gap-3">
+                    <a href="#" class="text-white" aria-label="Facebook"><i class="fab fa-facebook fa-lg"></i></a>
+                    <a href="#" class="text-white" aria-label="Instagram"><i class="fab fa-instagram fa-lg"></i></a>
+                    <a href="#" class="text-white" aria-label="Twitter"><i class="fab fa-twitter fa-lg"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Texto Copyright -->
+        <div class="text-center mt-4">
+            <p>&copy; <span id="year"></span> E-Commerce. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- Script para actualizar el año automáticamente -->
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+        
+
+    <!-- Bootstrap JS -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+

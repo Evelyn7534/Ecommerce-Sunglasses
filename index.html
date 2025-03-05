@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>E-Commerce</title>
+
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
@@ -14,8 +15,26 @@
     <link rel="stylesheet" href="./css/styles.css">
 
 </head>
-<body>
+
     <body>
+        <!-- Script para activar animación -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const fadeInElements = document.querySelectorAll(".fade-in");
+
+        const fadeInOnScroll = () => {
+            fadeInElements.forEach(el => {
+                if (el.getBoundingClientRect().top < window.innerHeight - 50) {
+                    el.classList.add("visible");
+                }
+            });
+        };
+
+        window.addEventListener("scroll", fadeInOnScroll);
+        fadeInOnScroll();
+    });
+</script>
+
         <!-- Barra de Envío Gratis -->
         <div class="bg-black text-white text-center py-2 fw-semibold">
             FREE SHIPPING ON ORDERS OVER $65
@@ -25,7 +44,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark bg-black">
             <div class="container">
                 <!-- Logo -->
-                <a class="navbar-brand" href="#">LOGO</a>
+                <a class="navbar-brand" href="index.html">LOGO</a>
     
                 <!-- Botón de menú en dispositivos pequeños -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -36,17 +55,13 @@
                 <!-- Menú de navegación -->
 <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
     <ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link" href="./index.html">Inicio</a></li>
-        <a class="nav-link" href="./pages/allproducts.html">All Products</a></li>
-        <a class="nav-link" href="./pages/giftcard.html">GIFT CARD</a></li>
+        <li class="nav-item"><a class="nav-link active" href="./index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="./pages/allproducts.html">All Products</a></li>
+        <li class="nav-item"><a class="nav-link" href="./pages/giftcard.html">GIFT CARD</a></li>
         <li class="nav-item"><a class="nav-link" href="./pages/about.html">About</a></li>
-
 
     </ul>
 </div>
-
-    
-    
                 <!-- Íconos de búsqueda y carrito alineados a la derecha -->
                 <div class="d-flex align-items-center ms-auto">
                     <a href="#" class="me-3">
@@ -66,14 +81,13 @@
             <!-- Texto -->
             <div class="col-lg-6 d-flex flex-column gap-3">
                 <h1 class="hero-title">Style and Quality <br> Handmade</h1>
+                <a href="./pages/allproducts.html" target="_blank" rel="noopener noreferrer">
+                    <button type="button" title="See all products" class="hero btn btn-custom" 
+                        style="background-color: #7C6829; color: white; border-radius: 12px; width: 150px; height: 45px; font-size: 16px;">
+                        SHOP NOW
+                    </button>
+                </a>
                 
-                <button type="button" class="hero btn btn-custom" 
-                    style="background-color: #7C6829; color: white; border-radius: 12px; width: 150px; height: 45px; font-size: 16px;">
-                    SHOP NOW
-                </button>
-                
-
-
             </div>
             <!-- Imagen -->
             <div class="col-lg-6">
@@ -83,32 +97,31 @@
         </div>
     </header>
 
-<main>
-
-</main>
-
 <!-- Best Sellers -->
-<section class="bestSeller py-5" style="background-color: black;">
-    <div class="container text-center">
-        <h2 class="text-white fw-semibold display-5 mb-3">BEST SELLERS</h2> 
-        <p class="text-white mx-auto mb-4" style="max-width: 600px; font-size: 18px; line-height: 1.6;">
-            Discover our best-selling models, chosen for their style and quality. 
-            Find the perfect pair to elevate your look with a touch of elegance.
-        </p> 
+<section class="bestSeller py-5" style="background: linear-gradient(to bottom, #000000, #1a1a1a); margin-bottom: 80px;">
+    <div class="container text-start"> <!-- Contenedor principal alineado a la izquierda -->
+        <!-- Título -->
+        <h2 class="text-white fw-semibold display-5 mb-3">BEST SELLERS</h2>
 
-        <!-- Botón con Bootstrap -->
-        <a href="#" class="btn shop-now-btn">
-            Shop Now <span class="arrow">&gt;</span>
+        <!-- Descripción -->
+        <p class="text-white mb-4" style="max-width: 600px; font-size: 18px; line-height: 1.6; color: #f0f0f0b9;">
+            Discover our best-selling models, chosen for their style and quality.
+            Find the perfect pair to elevate your look with a touch of elegance.
+        </p>
+
+        <!-- Botón alineado a la izquierda -->
+        <a href="./pages/allproducts.html" class="btn shop-now-btn">
+            SHOP NOW <span class="arrow">&gt;</span>
         </a>
 
         <!-- Contenedor de tarjetas -->
-        <div class="row justify-content-center gy-4 mt-5">
+        <div class="row justify-content-start gy-4" style="margin-top: 50px;"> <!-- Ajusta el margin-top para mover las tarjetas más abajo -->
             <!-- Card 1 -->  
             <div class="col-lg-3 col-md-6 col-sm-12">
                 <div class="card text-center shadow-lg bg-white border-0 rounded animate-card">
                     <img src="./assets/img/korean.jpg" class="card-img-top" alt="Bull">
                     <div class="card-body p-4 text-start">
-                        <h5 class="card-title text-uppercase fw-bold">Bull</h5>
+                        <h5 class="card-title text-uppercase fw-bold">BULLER</h5>
                         <p class="card-text fw-medium text-muted fs-5">$50</p>
                     </div>
                 </div>
@@ -117,9 +130,9 @@
             <!-- Card 2 -->
             <div class="col-lg-3 col-md-6 col-sm-12">
                 <div class="card text-center shadow-lg bg-white border-0 rounded animate-card">
-                    <img src="./assets/img/Óculos de sol VANLINKER 90s Retro Oval Polarizados UV400 Pretos.jpg" class="card-img-top" alt="Dark">
+                    <img src="./assets/img/animalprint.jpg" class="card-img-top" alt="Dark">
                     <div class="card-body p-4 text-start">
-                        <h5 class="card-title text-uppercase fw-bold">Dark</h5>
+                        <h5 class="card-title text-uppercase fw-bold">CHARLY</h5>
                         <p class="card-text fw-medium text-muted fs-5">$75</p>
                     </div>
                 </div>
@@ -130,7 +143,7 @@
                 <div class="card text-center shadow-lg bg-white border-0 rounded animate-card">
                     <img src="./assets/img/redvelvent.png" class="card-img-top" alt="Mat">
                     <div class="card-body p-4 text-start">
-                        <h5 class="card-title text-uppercase fw-bold">Mat</h5>
+                        <h5 class="card-title text-uppercase fw-bold">MAT</h5>
                         <p class="card-text fw-medium text-muted fs-5">$30</p>
                     </div>
                 </div>
@@ -141,7 +154,7 @@
                 <div class="card text-center shadow-lg bg-white border-0 rounded animate-card">
                     <img src="./assets/img/suny.png" class="card-img-top" alt="Sunny">
                     <div class="card-body p-4 text-start">
-                        <h5 class="card-title text-uppercase fw-bold">Sunny</h5>
+                        <h5 class="card-title text-uppercase fw-bold">SUNNY</h5>
                         <p class="card-text fw-medium text-muted fs-5">$50</p>
                     </div>
                 </div>
@@ -150,132 +163,43 @@
     </div>
 </section>
 
-<!-- Estilos -->
-<style>
-    .shop-now-btn {
-        display: inline-flex;
-        align-items: center;
-        gap: 8px;
-        font-size: 20px;
-        font-weight: 500;
-        color: white;
-        text-decoration: none;
-        transition: color 0.3s ease;
-    }
-
-    .shop-now-btn .arrow {
-        transition: transform 0.3s ease;
-        font-size: 22px;
-    }
-
-    .shop-now-btn:hover {
-        color: #B29F6E !important;
-    }
-
-    .shop-now-btn:hover .arrow {
-        transform: translateX(5px);
-    }
-
-    .bestSeller h5 {
-        color: black;
-        font-size: 22px;
-        margin-bottom: 10px;
-        font-weight: bold;
-    }
-
-    .bestSeller p {
-        color: black;
-        font-weight: 400;
-        font-size: 16px;
-    }
-
-    /* Estilos de la imagen */
-    .card {
-        overflow: hidden;
-    }
-
-    .card-img-top {
-        height: 280px;
-        object-fit: cover;
-        transition: transform 0.3s ease-in-out;
-    }
-
-    .card:hover .card-img-top {
-        transform: scale(1.02);
-    }
-
-    /* Animación de la tarjeta */
-    .animate-card {
-        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    }
-
-    .animate-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
-    }
-</style>
-
-
-
-    <!-- Sección Gift Card -->
-<section class="giftcard py-5">
+<!-- Sección New Collection -->
+<section class="new-collection py-5 bg-black text-white">
     <div class="container">
         <div class="row align-items-center">
-            <!-- Columna de texto -->
-            <div class="col-md-6 d-flex flex-column align-items-start gap-3 p-3 border-dashed rounded-3">
-                <h1>Looking for the <br> perfect gift?</h1>
-                <p class="giftcard-paragraph" style="max-width: 400px; line-height: 1.5;">
-                    A practical and elegant gift, our gift cards will give them the freedom to choose their favorite frames.
-                </p>                
-                <button type="button" class=" Gf btn btn-custom btn-lg"style="background-color: #816D2B; color: white;border-radius: 10px">GIFT CARD ></button>
-                
-
-            </div>
-            <!-- Imagen -->
-            <div class="col-md-6 p-0 d-flex justify-content-end">
-                <img src="./assets/img/giftcardorginal.jpg" alt="Gift Card" class="img-fluid">
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<!-- Sección New Collection -->
-<section class="d-flex justify-content-center align-items-center text-center bg-black py-5">
-    <div class="container my-5 px-4 new-collection">
-        <!-- Contenedor principal con columnas responsivas -->
-        <div class="row align-items-center justify-content-center">
             <!-- Columna de Texto y Botón -->
-            <div class="col-12 col-md-5 text-center text-md-start mb-4 mb-md-0">
-                <h2 class="text-white fw-bold" style="font-size: 36px; font-family: 'Montserrat Alternates', sans-serif; letter-spacing: 0.468px;">
-                    New Collection
-                </h2>
-                <p class="text-white mt-3" style="font-size: 18px; opacity: 0.8;">
+            <div class="col-md-6 text-center text-md-start mb-4 mb-md-0">
+                <h2 class="fw-bold display-4">New Collection</h2>
+                <p class="lead mt-3">
                     Discover our latest eyewear collection, blending elegance with modern design. Find the perfect accessory for any occasion.
                 </p>
-                <button type="button" class="btn btn-lg text-white px-4 mt-3" style="background-color: #816D2B; border-radius: 10px;">
+                <a href="#" class="btn btn-lg text-white mt-3" style="background-color: #816D2B; border-radius: 10px;">
                     VIEW COLLECTION
-                </button>
+                </a>
             </div>
 
             <!-- Columna de Productos -->
-            <div class="col-12 col-md-7 d-flex flex-wrap gap-4 justify-content-center">
-                <div class="card border-0 text-center bg-transparent fade-in" style="width: 250px;">
-                    <div class="image-container">
-                        <img src="./assets/img/Rectangle 29.png" class="img-fluid rounded" alt="Boris">
+            <div class="col-md-6">
+                <div class="row g-4">
+                    <!-- Producto 1: Boris -->
+                    <div class="col-12 col-md-6">
+                        <div class="card bg-transparent border-0">
+                            <img src="./assets/img/Rectangle 29.png" alt="Boris" class="img-fluid rounded">
+                            <div class="card-body text-white text-start"> <!-- Alineación a la izquierda -->
+                                <h5 class="fw-semibold">Boris</h5>
+                                <p class="card-text">$150</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="card-body text-white">
-                        <h5 class="fw-semibold">Boris</h5>
-                        <p class="card-text">$150.000</p>
-                    </div>
-                </div>
-                <div class="card border-0 text-center bg-transparent fade-in" style="width: 250px;">
-                    <div class="image-container">
-                        <img src="./assets/img/Rectangle 30.png" class="img-fluid rounded" alt="Milo">
-                    </div>
-                    <div class="card-body text-white">
-                        <h5 class="fw-semibold">Milo</h5>
-                        <p class="card-text">$165.000</p>
+                    <!-- Producto 2: Milo -->
+                    <div class="col-12 col-md-6">
+                        <div class="card bg-transparent border-0">
+                            <img src="./assets/img/Rectangle 30.png" alt="Milo" class="img-fluid rounded">
+                            <div class="card-body text-white text-start"> <!-- Alineación a la izquierda -->
+                                <h5 class="fw-semibold">Milo</h5>
+                                <p class="card-text">$135</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -287,56 +211,30 @@
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700&display=swap');
 
-    /* Ajuste de imágenes */
-    .image-container {
-        width: 250px;
-        height: 250px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: black;
-    }
-
-    .image-container img {
-        max-width: 100%;
-        max-height: 100%;
-        object-fit: contain;
-    }
-
-    /* Animación */
-    .fade-in {
-        opacity: 0;
-        transform: translateY(30px);
-        transition: opacity 1s ease-out, transform 1s ease-out;
-    }
-
-    .fade-in.visible {
-        opacity: 1;
-        transform: translateY(0);
-    }
 </style>
 
-<!-- Script para activar animación -->
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const fadeInElements = document.querySelectorAll(".fade-in");
+<!-- Sección Winter Collection -->
+<section class="winter-collection-section py-5" style="background: linear-gradient(250.91deg, #2B3931 24.52%, rgba(24, 25, 25, 0.75) 98.35%);">
+    <div class="container">
+        <div class="row align-items-center">
+            <!-- Imagen a la izquierda -->
+            <div class="col-md-6 position-relative">
+                <img src="./assets/img/modelo.jpg" alt="Winter Collection" class="img-fluid rounded">
+                <div class="overlay position-absolute top-0 start-0 end-0 bottom-0"></div>
+            </div>
 
-        const fadeInOnScroll = () => {
-            fadeInElements.forEach(el => {
-                if (el.getBoundingClientRect().top < window.innerHeight - 50) {
-                    el.classList.add("visible");
-                }
-            });
-        };
-
-        window.addEventListener("scroll", fadeInOnScroll);
-        fadeInOnScroll();
-    });
-</script>
-
-
-
-
+            <!-- Texto a la derecha -->
+            <div class="col-md-6 text-white text-start ps-md-5 mt-4 mt-md-0">
+                <h2 class="fw-bold display-4 mb-3">Winter Collection</h2>
+                <p class="lead mb-4" style="font-size: 18px; line-height: 1.6;">
+                    Discover our winter collection: elegance and exclusivity <br>
+                    that combine style and comfort for this season.
+                </p>
+                <button type="button" class="btn btn-lg" style="background-color: #816D2B; color: white; border-radius: 10px; padding: 12px 24px;">BUY NOW</button>
+            </div>
+        </div>
+    </div>
+</section>
 
 <!-- Sección "The Ideal Accessory" -->
 <section class="accessory-section d-flex align-items-center text-center" style="background: rgba(25, 29, 27, 1); height: 361px; padding: 40px 80px;">
@@ -348,157 +246,201 @@
 </section>
 
 
-
-
-    <!-- Sección Winter Collection -->
-    <section class="winter-collection-section d-flex align-items-center py-5">
-        <div class="container">
-            <div class="row align-items-center">
-                <!-- Imagen a la izquierda -->
-                <div class="col-md-6 d-flex justify-content-start position-relative">
-                    <img src="./assets/img/modelo.jpg" alt="New Collection" class="img-fluid">
-                    <div class="overlay"></div>
-                </div>
-                <!-- Texto a la derecha -->
-                <div class="col-md-6 text-white text-start">
-                    <h2 class="fw-bold mb-3">Winter Collection</h2>
-                    <p class="lead mb-4">
-                        Discover our winter collection: elegance and exclusivity <br>
-                        that combine style and comfort for this season.
-                    </p>
-                
-                <button type="button" class="winter btn-custom btn-lg" style="background-color: #816D2B; color: white; border-radius: 10px;">BUY NOW</button>
-            </div>
-        </div>
-    </div>
-</section>
-            <!-- Sección de Testimonios -->
-    <section class="Testimonios my-5 text-white" style="background-color: #181919; min-height: 600px; padding: 40px 0;">
-        <div class="container">
-        <div class="row">
-            <!-- Contenido alineado a la izquierda -->
-            <div class="col-md-6 d-flex flex-column align-items-start text-start">
-                <h2>Join Hundreds of Satisfied Users</h2>
-                <p>Join hundreds of people who already enjoy the unmatched style and comfort of our glasses. Discover the difference today!</p>
-            </div>
-        </div>
-
-        <!-- Testimonios -->
-        <div class="row justify-content-center mt-4">
-            <div class="col-12 col-sm-6 col-md-3 p-2">
-                <div class="card bg-light p-3 d-flex flex-column justify-content-between h-100" style="height: 220px; border-radius: 8px;">
-                    <p class="text-muted">❝</p>
-                    <p class="text-black flex-grow-1" style="font-weight: 300;">I loved them! &lt;3</p>
-                    <div class="d-flex align-items-center mt-auto">
-                        <img src="./assets/img/carolina.svg" class="rounded-circle me-2" width="30" height="30" alt="User 1">
-                        <span class="text-black">Carolina Mendez</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-12 col-sm-6 col-md-3 p-2">
-                <div class="card bg-light p-3 d-flex flex-column justify-content-between h-100" style="height: 220px; border-radius: 8px;">
-                    <p class="text-muted">❝</p>
-                    <p class="text-black flex-grow-1" style="font-weight: 300;">I'm already thinking about buying others.</p>
-                    <div class="d-flex align-items-center mt-auto">
-                        <img src="./assets/img/natali.opinion.svg" class="rounded-circle me-2" width="30" height="30" alt="User 2">
-                        <span class="text-black">Natali Perez</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-12 col-sm-6 col-md-3 p-2">
-                <div class="card bg-light p-3 d-flex flex-column justify-content-between h-100" style="height: 220px; border-radius: 8px;">
-                    <p class="text-muted">❝</p>
-                    <p class="text-black flex-grow-1" style="font-weight: 300;">Everything was great!!</p>
-                    <div class="d-flex align-items-center mt-auto">
-                        <img src="./assets/img/descarga (2).jpg" class="rounded-circle me-2" width="30" height="30" alt="User 3">
-                        <span class="text-black">Justina Delgadillo</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-12 col-sm-6 col-md-3 p-2">
-                <div class="card bg-light p-3 d-flex flex-column justify-content-between h-100" style="height: 220px; border-radius: 8px;">
-                    <p class="text-muted">❝</p>
-                    <p class="text-black flex-grow-1" style="font-weight: 300;">Exceptional quality and design.</p>
-                    <div class="d-flex align-items-center mt-auto">
-                        <img src="./assets/img/manopinion 2.svg" class="rounded-circle me-2" width="30" height="30" alt="User 4">
-                        <span class="text-black">James Fulton</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Beneficios -->
-<section class="features py-4" style="background-color: #181919; height: 350px;">
+    <!-- Sección Gift Card -->
+<section class="giftcard py-5">
     <div class="container">
-        <div class="row text-center">
-            <div class="col-12 col-md-3 mb-3 mb-md-0">
-                <div class="feature-box">
-                    <img src="../Ecommerce Evelyn/assets/img/material-symbols-light_autorenew-rounded.svg" alt="Easy Returns" width="50">
-                    <h5 class="mt-2">EASY RETURNS</h5>
-                    <p>If you don't like it, you can return it</p>
-                </div>
+        <div class="row align-items-center">
+            <!-- Columna de texto -->
+            <div class="col-md-6 d-flex flex-column align-items-start gap-3 p-3 border-dashed rounded-3">
+                <h1>Looking for the <br> perfect gift?</h1>
+                <p class="giftcard-paragraph" style="max-width: 400px; line-height: 1.5;">
+                    A practical and elegant gift, our gift cards will give them the freedom to choose their favorite frames.
+                </p>    
+                <style>
+                    .Gf:hover {
+                        background-color: #6B5A23; /* Un tono más oscuro para el hover */
+                    }
+                </style>
+                
+                <a href="./pages/giftcard.html" class="text-decoration-none">
+                    <button type="button" class="Gf btn btn-custom btn-lg" 
+                            style="background-color: #816D2B; color: white; border-radius: 10px; 
+                                   padding: 12px 24px; font-size: 18px; font-weight: 600; 
+                                   transition: background-color 0.3s ease;">
+                        GIFT CARD <span style="font-size: 20px;">→</span>
+                    </button>
+                </a>
             </div>
-            <div class="col-12 col-md-3 mb-3 mb-md-0">
-                <div class="feature-box">
-                    <img src="../Ecommerce Evelyn/assets/img/Vector15%.svg" alt="15% OFF" width="50">
-                    <h5 class="mt-2">15% OFF</h5>
-                    <p>Paying by transfer</p>
-                </div>
-            </div>
-            <div class="col-12 col-md-3 mb-3 mb-md-0">
-                <div class="feature-box">
-                    <img src="../Ecommerce Evelyn/assets/img/Vector.svg" alt="Free Shipping" width="50">
-                    <h5 class="mt-2">FREE SHIPPING</h5>
-                    <p>I received your order quickly</p>
-                </div>
-            </div>
-            <div class="col-12 col-md-3">
-                <div class="feature-box">
-                    <img src="../Ecommerce Evelyn/assets/img/Card.svg" alt="Installments" width="50">
-                    <h5 class="mt-2">3 INTEREST-FREE INSTALLMENTS</h5>
-                    <p>With all the cards</p>
-                </div>
+            <!-- Imagen -->
+            <div class="col-md-6 p-0 d-flex justify-content-end">
+                <img src="./assets/img/giftcardorginal.jpg" alt="Gift Card" class="img-fluid">
             </div>
         </div>
     </div>
 </section>
 
+         
 
-
-
-    <!-- Newsletter Section -->
-<section class="newsletter-section d-flex flex-column align-items-center">
-    <div class="newsletter-box" >
-        <h2 class="fw-bold">Subscribe to our newsletter</h2>
-        <p>and be among the first to hear about new arrivals, events and special offers.</p>
-        <form>
-            <div class="mb-3">
-                <input type="email" class="form-control" placeholder="Email address*" required>
+    <!-- Sección de Testimonios -->
+    <section class="testimonials py-5 text-white" style="background-color: rgba(24, 25, 25, 1);
+;">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-md-6">
+                    <h2>Join Hundreds of Satisfied Users</h2>
+                    <p>Join hundreds of people who already enjoy the unmatched style and comfort of our glasses. Discover the difference today!</p>
+                </div>
             </div>
-            <div class="mb-3 form-check d-flex align-items-center">
-                <input type="checkbox" class="form-check-input" id="subscribeCheck">
-                <label class="form-check-label ms-2" for="subscribeCheck">Yes, subscribe me to your newsletter.</label>
+            <div class="row justify-content-center g-4">
+                <!-- Testimonio 1 -->
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div class="card bg-light p-3 h-100 rounded">
+                        <p class="text-muted">❝</p>
+                        <p class="text-black flex-grow-1 fw-light">I loved them! &lt;3</p>
+                        <div class="d-flex align-items-center mt-auto">
+                            <img src="./assets/img/carolina.svg" class="rounded-circle me-2" width="30" height="30" alt="Carolina Mendez">
+                            <span class="text-black">Carolina Mendez</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Testimonio 2 -->
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div class="card bg-light p-3 h-100 rounded">
+                        <p class="text-muted">❝</p>
+                        <p class="text-black flex-grow-1 fw-light">I’m already thinking about buying others.</p>
+                        <div class="d-flex align-items-center mt-auto">
+                            <img src="./assets/img/natali.opinion.svg" class="rounded-circle me-2" width="30" height="30" alt="Natali Perez">
+                            <span class="text-black">Natali Perez</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Testimonio 3 -->
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div class="card bg-light p-3 h-100 rounded">
+                        <p class="text-muted">❝</p>
+                        <p class="text-black flex-grow-1 fw-light">Everything was great!!</p>
+                        <div class="d-flex align-items-center mt-auto">
+                            <img src="./assets/img/descarga (2).jpg" class="rounded-circle me-2" width="30" height="30" alt="Justina Delgadillo">
+                            <span class="text-black">Justina Delgadillo</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Testimonio 4 -->
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div class="card bg-light p-3 h-100 rounded">
+                        <p class="text-muted">❝</p>
+                        <p class="text-black flex-grow-1 fw-light">Exceptional quality and design.</p>
+                        <div class="d-flex align-items-center mt-auto">
+                            <img src="./assets/img/manopinion 2.svg" class="rounded-circle me-2" width="30" height="30" alt="James Fulton">
+                            <span class="text-black">James Fulton</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <button type="button" class=" newsletter btn-custom btn-lg " style="background-color: #816D2B; color: white; border-radius: 4px;height: 43px;padding: 10px 27px;">Submit</button>
-        </form>
+        </div>
+    </section>
+
+    <!-- Sección de Beneficios -->
+    <section class="features py-5 text-white" style="background-color: rgba(24, 25, 25, 1);margin-top: auto; margin-bottom:auto;">
+        <div class="container">
+            <div class="row text-center g-4">
+                <!-- Beneficio 1: Easy Returns -->
+                <div class="col-12 col-md-3">
+                    <div class="feature-box">
+                        <img src="./assets/img/material-symbols-light_autorenew-rounded.svg" alt="Easy Returns" width="50">
+                        <h5 class="mt-3">EASY RETURNS</h5>
+                        <p>If you don't like it, you can return it</p>
+                    </div>
+                </div>
+                <!-- Beneficio 2: 15% OFF -->
+                <div class="col-12 col-md-3">
+                    <div class="feature-box">
+                        <img src="./assets/img/Vector15%.svg" alt="15% OFF" width="50">
+                        <h5 class="mt-3">15% OFF</h5>
+                        <p>Paying by transfer</p>
+                    </div>
+                </div>
+                <!-- Beneficio 3: Free Shipping -->
+                <div class="col-12 col-md-3">
+                    <div class="feature-box">
+                        <img src="./assets/img/Vector.svg" alt="Free Shipping" width="50">
+                        <h5 class="mt-3">FREE SHIPPING</h5>
+                        <p>I received your order quickly</p>
+                    </div>
+                </div>
+                <!-- Beneficio 4: Installments -->
+                <div class="col-12 col-md-3">
+                    <div class="feature-box">
+                        <img src="./assets/img/Card.svg" alt="Installments" width="50">
+                        <h5 class="mt-3">3 INTEREST-FREE INSTALLMENTS</h5>
+                        <p>With all the cards</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<!-- Newsletter Section -->
+<!-- Newsletter Section -->
+<section class="newsletter-section py-5" style="background: linear-gradient(250.91deg, #2B3931 24.52%, rgba(24, 25, 25, 0.75) 98.35%);">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6 text-center">
+                <!-- Título -->
+                <h2 class="fw-bold text-white mb-4">Subscribe to our newsletter</h2>
+
+                <!-- Descripción -->
+                <p class="text-white mb-4" style="font-size: 18px; line-height: 1.6;">
+                    and be among the first to hear about new arrivals, events and special offers.
+                </p>
+
+                <!-- Formulario -->
+                <form>
+                    <!-- Campo de Email -->
+                    <div class="mb-3">
+                        <input type="email" class="form-control" placeholder="Email address*" required style="background-color: transparent; border: 1px solid #fff; color: white; padding: 12px; border-radius: 4px;">
+                    </div>
+
+                    <!-- Checkbox y Botón en la misma línea -->
+                    <div class="d-flex align-items-center justify-content-between">
+                        <!-- Checkbox -->
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="subscribeCheck" style="background-color: transparent; border: 1px solid #fff;">
+                            <label class="form-check-label text-white" for="subscribeCheck">Yes, subscribe me to your newsletter.</label>
+                        </div>
+
+                        <!-- Botón Submit -->
+                        <button type="submit" class="btn" style="
+                            background-color: #816D2B;
+                            color: white;
+                            border-radius: 4px;
+                            width: 110px;
+                            height: 43px;
+                            padding: 10px 27px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        ">
+                            Submit
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
 </section>
-
-<footer class="footer-section text-white" style="background: #181919; padding: 64px 64px 32px 64px;">
+<!-- Footer -->
+<footer class="footer-section text-white py-5" style="background: #181919;">
     <div class="container">
         <div class="row">
             <!-- Columna Logo -->
-            <div class="col-md-4">
+            <div class="col-md-4 text-center text-md-start">
                 <h3>LOGO</h3>
             </div>
 
             <!-- Columna de Links -->
-            <div class="col-md-4">
+            <div class="col-md-4 text-center">
                 <ul class="list-unstyled">
                     <li><a href="#" class="text-white text-decoration-none">Privacy Policy</a></li>
                     <li><a href="#" class="text-white text-decoration-none">Terms of Use</a></li>
@@ -507,8 +449,8 @@
             </div>
 
             <!-- Columna Redes Sociales -->
-            <div class="col-md-4">
-                <div class="d-flex gap-3">
+            <div class="col-md-4 text-center text-md-end">
+                <div class="d-flex justify-content-center justify-content-md-end gap-3">
                     <a href="#" class="text-white" aria-label="Facebook"><i class="fab fa-facebook fa-lg"></i></a>
                     <a href="#" class="text-white" aria-label="Instagram"><i class="fab fa-instagram fa-lg"></i></a>
                     <a href="#" class="text-white" aria-label="Twitter"><i class="fab fa-twitter fa-lg"></i></a>
@@ -518,7 +460,7 @@
 
         <!-- Texto Copyright -->
         <div class="text-center mt-4">
-            <p>&copy; <span id="year"></span> E-Commerce. All rights reserved.</p>
+            <p class="text-white">&copy; <span id="year"></span> E-Commerce. All rights reserved.</p>
         </div>
     </div>
 </footer>

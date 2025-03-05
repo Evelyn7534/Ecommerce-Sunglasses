@@ -71,10 +71,10 @@
                         <!-- Menú de navegación -->
         <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
             <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
-                <li class="nav-item"><a class="nav-link" href="pages/allproducts.html">All Products</a></li>
-                <li class="nav-item"><a class="nav-link" href="pages/giftcard.html act">Gift Card</a></li>
-                <li class="nav-item"><a class="nav-link" href="pages/about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link active" href="../index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="allproducts.html">All Products</a></li>
+                <li class="nav-item"><a class="nav-link" href="giftcard.html">Gift Card</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
             </ul>
         </div>
        
@@ -150,40 +150,54 @@
     </div>
 </div>
 
-<footer class="footer-section text-white" style="background: #181919; padding: 64px 64px 32px 64px;">
+<!-- Newsletter Section -->
+<section class="newsletter-section py-5" style="background: linear-gradient(250.91deg, #2B3931 24.52%, rgba(24, 25, 25, 0.75) 98.35%);">
     <div class="container">
-        <div class="row">
-            <!-- Columna Logo -->
-            <div class="col-md-4">
-                <h3>LOGO</h3>
-            </div>
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6 text-center">
+                <!-- Título -->
+                <h2 class="fw-bold text-white mb-4">Subscribe to our newsletter</h2>
 
-            <!-- Columna de Links -->
-            <div class="col-md-4">
-                <ul class="list-unstyled">
-                    <li><a href="#" class="text-white text-decoration-none">Privacy Policy</a></li>
-                    <li><a href="#" class="text-white text-decoration-none">Terms of Use</a></li>
-                    <li><a href="#" class="text-white text-decoration-none">Contact</a></li>
-                </ul>
-            </div>
+                <!-- Descripción -->
+                <p class="text-white mb-4" style="font-size: 18px; line-height: 1.6;">
+                    and be among the first to hear about new arrivals, events and special offers.
+                </p>
 
-            <!-- Columna Redes Sociales -->
-            <div class="col-md-4">
-                <div class="d-flex gap-3">
-                    <a href="#" class="text-white" aria-label="Facebook"><i class="fab fa-facebook fa-lg"></i></a>
-                    <a href="#" class="text-white" aria-label="Instagram"><i class="fab fa-instagram fa-lg"></i></a>
-                    <a href="#" class="text-white" aria-label="Twitter"><i class="fab fa-twitter fa-lg"></i></a>
-                </div>
-            </div>
-        </div>
+                <!-- Formulario -->
+                <form>
+                    <!-- Campo de Email -->
+                    <div class="mb-3">
+                        <input type="email" class="form-control" placeholder="Email address*" required style="background-color: transparent; border: 1px solid #fff; color: white; padding: 12px; border-radius: 4px;">
+                    </div>
 
-        <!-- Texto Copyright -->
-        <div class="text-center mt-4">
-            <p>&copy; <span id="year"></span> E-Commerce. All rights reserved.</p>
+                    <!-- Checkbox y Botón en la misma línea -->
+                    <div class="d-flex align-items-center justify-content-between">
+                        <!-- Checkbox -->
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="subscribeCheck" style="background-color: transparent; border: 1px solid #fff;">
+                            <label class="form-check-label text-white" for="subscribeCheck">Yes, subscribe me to your newsletter.</label>
+                        </div>
+
+                        <!-- Botón Submit -->
+                        <button type="submit" class="btn" style="
+                            background-color: #816D2B;
+                            color: white;
+                            border-radius: 4px;
+                            width: 110px;
+                            height: 43px;
+                            padding: 10px 27px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        ">
+                            Submit
+                        </button>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
-</footer>
-
+</section>
 <!-- Script para actualizar el año automáticamente -->
 <script>
     document.getElementById("year").textContent = new Date().getFullYear();

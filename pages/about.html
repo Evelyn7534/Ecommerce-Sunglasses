@@ -11,31 +11,47 @@
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
+   
+      <!-- Barra de Envío Gratis -->
+      <div class="bg-black text-white text-center py-2 fw-semibold">
+        FREE SHIPPING ON ORDERS OVER $65
+    </div>
+
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-black" aria-label="Navegacion principal">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black"aria-label="Navegacion principal"aria-label="Navegación principal">
         <div class="container">
-            <a class="navbar-brand" href="../index.html">LOGO</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <!-- Logo -->
+            <a class="navbar-brand" href="index.html">LOGO</a>
+
+            <!-- Botón de menú en dispositivos pequeños -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="allproducts.html">All Products</a></li>
-                    <li class="nav-item"><a class="nav-link" href="giftcard.html">Gift Card</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
-                </ul>
-            </div>
+
+            <!-- Menú de navegación -->
+<div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+<ul class="navbar-nav">
+    <li class="nav-item"><a class="nav-link active" href="../index.html">Inicio</a></li>
+    <li class="nav-item"><a class="nav-link" href="allproducts.html">All Products</a></li>
+    <li class="nav-item"><a class="nav-link" href="giftcard.html">GIFT CARD</a></li>
+    <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+
+</ul>
+</div>
+            <!-- Íconos de búsqueda y carrito alineados a la derecha -->
             <div class="d-flex align-items-center ms-auto">
                 <a href="#" class="me-3">
-                    <img src="../assets/img/buscador.svg" alt="Buscar" width="25">
+                    <img src="./assets/img/buscador.svg" alt="Buscar" width="36px min-height 24px">
                 </a>
                 <a href="#">
-                    <img src="../assets/img/tienda.svg" alt="Carrito" width="25">
+                    <img src="./assets/img/tienda.svg" alt="Carrito" width="36px min-height 24px">
                 </a>
             </div>
         </div>
     </nav>
+   
+    
 <!-- Sección "Nosotros" -->
 <!-- Sección "Nosotros" -->
 <section class="about-section py-5 d-flex bg-black align-items-center" style="min-height: 700px;">

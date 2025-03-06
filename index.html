@@ -17,28 +17,27 @@
         @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700&display=swap');
     
     </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const fadeInElements = document.querySelectorAll(".fade-in");
+    
+            const fadeInOnScroll = () => {
+                fadeInElements.forEach(el => {
+                    if (el.getBoundingClientRect().top < window.innerHeight - 50) {
+                        el.classList.add("visible");
+                    }
+                });
+            };
+    
+            window.addEventListener("scroll", fadeInOnScroll);
+            fadeInOnScroll();
+        });
+    </script>
 
 </head>
 
     <body>
-        <!-- Script para activar animación -->
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const fadeInElements = document.querySelectorAll(".fade-in");
-
-        const fadeInOnScroll = () => {
-            fadeInElements.forEach(el => {
-                if (el.getBoundingClientRect().top < window.innerHeight - 50) {
-                    el.classList.add("visible");
-                }
-            });
-        };
-
-        window.addEventListener("scroll", fadeInOnScroll);
-        fadeInOnScroll();
-    });
-</script>
-
+        
         <!-- Barra de Envío Gratis -->
         <div class="bg-black text-white text-center py-2 fw-semibold">
             FREE SHIPPING ON ORDERS OVER $65
@@ -69,10 +68,10 @@
                 <!-- Íconos de búsqueda y carrito alineados a la derecha -->
                 <div class="d-flex align-items-center ms-auto">
                     <a href="#" class="me-3">
-                        <img src="./assets/img/buscador.svg" alt="Buscar" width="25">
+                        <img src="./assets/img/buscador.svg" alt="Buscar" width="36px min-height 24px">
                     </a>
                     <a href="#">
-                        <img src="./assets/img/tienda.svg" alt="Carrito" width="25">
+                        <img src="./assets/img/tienda.svg" alt="Carrito" width="36px min-height 24px">
                     </a>
                 </div>
             </div>
@@ -317,7 +316,7 @@
                         <p class="text-muted">❝</p>
                         <p class="text-black flex-grow-1 fw-light">Everything was great!!</p>
                         <div class="d-flex align-items-center mt-auto">
-                            <img src="./assets/img/descarga (2).jpg" class="rounded-circle me-2" width="30" height="30" alt="Justina Delgadillo">
+                            <img src="./assets/img/justina.svg" class="rounded-circle me-2" width="30" height="30" alt="Justina Delgadillo">
                             <span class="text-black">Justina Delgadillo</span>
                         </div>
                     </div>

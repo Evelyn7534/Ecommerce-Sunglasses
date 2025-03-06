@@ -1,9 +1,4 @@
-/* Estilos Generales */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 
 body {
     margin: 0;
@@ -15,6 +10,9 @@ body {
 h1, h2, h3 {
     font-family: 'Poppins', sans-serif; /* Para títulos */
     color: white;
+    margin-bottom: 20px;
+    
+   
 }
 
 p, a, li {
@@ -55,6 +53,8 @@ section {
 .shop-now-btn {
     display: inline-flex;
     align-items: center;
+    padding-top: 24px;
+    
     gap: 8px;
     font-size: 20px;
     font-weight: 500;
@@ -81,25 +81,22 @@ section {
     background: linear-gradient(251deg, #2B3931 24.52%, rgba(24, 25, 25, 0.75) 98.35%);
 }
 
-.border-dashed {
-    border: 1px dashed #C8A25F; /* Borde punteado */
-    padding: 24px;
-    border-radius: 8px;
-}
+
 
 /* Botones Personalizados */
 .btn-custom {
-    background-color: #C8A25F;
+
+    margin-bottom: 20px;
+    background-color: #816D2B;
     color: white;
     font-weight: bold;
     padding: 12px 20px;
-    border-radius: 5px;
-    border: none;
+    border-radius: 10px;
     transition: background-color 0.3s ease;
+    
 }
-
 .btn-custom:hover {
-    background-color: #a0824f;
+    background-color: #897842;
 }
 
 
@@ -123,7 +120,7 @@ section {
 
 .newsletter-section .form-check-input {
     background-color: transparent;
-    border: 1px solid #fff;
+    border: 1px solid #ffff;
 }
 
 .newsletter-section .form-check-input:checked {
@@ -144,7 +141,7 @@ section {
 }
 
 .newsletter-section .btn:hover {
-    background-color: #6B5A23;
+    background-color: #897842;
 }
 
 /* Footer */
@@ -160,7 +157,7 @@ section {
 }
 
 .footer-section a:hover {
-    color: #C8A25F;
+    color: #897842;
 }
 
 /* Responsividad */
@@ -175,6 +172,7 @@ section {
 
     .shop-now-btn {
         font-size: 18px;
+        
     }
 
     .Testimonios .card {
@@ -184,12 +182,11 @@ section {
     .newsletter-section .btn {
         width: 100%;
     }
+
 }   .bestSeller {
     padding-top: 80px; /* Aumenta el padding-top para agrandar la sección */
     padding-bottom: 80px; /* Aumenta el padding-bottom si deseas más espacio abajo */
 }
-
-
 
 .bestSeller h5 {
     color: black;
@@ -198,11 +195,7 @@ section {
     font-weight: bold;
 }
 
-.bestSeller p {
-    color: black;
-    font-weight: 400;
-    font-size: 16px;
-}
+
 
 /* Estilos de la imagen */
 .card {

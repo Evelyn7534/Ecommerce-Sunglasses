@@ -375,3 +375,18 @@ section {
 .quantity-btn:hover {
     color: #816D2B;
 }
+.icon-img {
+    width: 24px;
+    min-height: 24px;
+}
+.about-section{
+    min-height: 800px;
+    p{
+        color: #e4e4e4;
+    }
+}
+.about-image{
+    width: 100%;
+    height: 60vh;
+}
+

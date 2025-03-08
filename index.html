@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-Commerce</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -78,26 +78,21 @@
         </nav>
     
   <!-- Hero Section -->
-    <header class="hero-section bg-black text-white py-5">
-        <div class="container">
+  <header class="hero-section bg-black text-white py-5">
+    <div class="container">
         <div class="row align-items-center">
             <!-- Texto -->
-            <div class="col-lg-6 d-flex flex-column gap-3">
+            <div class="col-lg-6">
                 <h1 class="hero-title">Style and Quality <br> Handmade</h1>
-                <a href="./pages/allproducts.html" target="_blank" rel="noopener noreferrer">
-                    <button type="button" title="See all products" class="hero btn btn-custom" ">
-                        SHOP NOW
-                    </button>
-                </a>
-                
+                <a href="./pages/allproducts.html" class="btn btn-custom btn-lg">SHOP NOW</a>
             </div>
             <!-- Imagen -->
             <div class="col-lg-6">
-                <img src="./assets/img/portadahero.png" alt="Hero Image" class="img-fluid hero-image" loading="lazy">
+                <img src="./assets/img/portadahero.png" alt="Hero Image" class="img-fluid" loading="lazy">
             </div>
         </div>
-        </div>
-    </header>
+    </div>
+</header>
 
 <!-- Best Sellers -->
 <section class="bestSeller py-5" style="background: linear-gradient(to bottom, #000000, #1a1a1a);">
@@ -377,67 +372,41 @@
         </div>
     </section>
 
-
 <!-- Newsletter Section -->
-<!-- Newsletter Section -->
-<section class="newsletter-section py-5" style="background: linear-gradient(250.91deg, #2B3931 24.52%, rgba(24, 25, 25, 0.75) 98.35%);">
+   <!-- Newsletter Section -->
+<section class="newsletter-section py-5 bg-black">
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-8 col-lg-6 text-center">
-                <!-- Título -->
-                <h2 class="fw-bold text-white mb-4">Subscribe to our newsletter</h2>
-
-                <!-- Descripción -->
-                <p class="text-white mb-4" style="font-size: 18px; line-height: 1.6;">
-                    and be among the first to hear about new arrivals, events and special offers.
-                </p>
-
-                <!-- Formulario -->
-                <form>
-                    <!-- Campo de Email -->
-                    <div class="mb-3">
-                        <input type="email" class="form-control" placeholder="Email address*" required style="background-color: transparent; border: 1px solid #fff; color: white; padding: 12px; border-radius: 4px;">
+        <div class="text-center text-white">
+            <h2 class="fw-bold mb-4">Subscribe to our newsletter</h2>
+            <p class="mb-4">
+                and be among the first to hear about new arrivals, events, and special offers.
+            </p>
+            <form class="mx-auto" style="max-width: 600px;">
+                <div class="mb-3">
+                    <input type="email" class="form-control" placeholder="Email address*" required>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="subscribeCheck">
+                        <label class="form-check-label" for="subscribeCheck">Yes, subscribe me to your newsletter.</label>
                     </div>
-
-                    <!-- Checkbox y Botón en la misma línea -->
-                    <div class="d-flex align-items-center justify-content-between">
-                        <!-- Checkbox -->
-                        <div class="form-check">
-                            <input type="checkbox" class="form-check-input" id="subscribeCheck" style="background-color: transparent; border: 1px solid #fff;">
-                            <label class="form-check-label text-white" for="subscribeCheck">Yes, subscribe me to your newsletter.</label>
-                        </div>
-
-                        <!-- Botón Submit -->
-                        <button type="submit" class="btn" style="
-                            background-color: #816D2B;
-                            color: white;
-                            border-radius: 4px;
-                            width: 110px;
-                            height: 43px;
-                            padding: 10px 27px;
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                        ">
-                            Submit
-                        </button>
-                    </div>
-                </form>
-            </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </form>
         </div>
     </div>
 </section>
 <!-- Footer -->
-<footer class="footer-section text-white" style="background: #181919; padding: 64px 64px 32px 64px;">
+<footer class="footer-section text-white  py-5">
     <div class="container">
         <div class="row">
             <!-- Columna Logo -->
-            <div class="col-md-4">
+            <div class="col-md-4 mb-4 mb-md-0">
                 <h3>LOGO</h3>
             </div>
-
+    
             <!-- Columna de Links -->
-            <div class="col-md-4">
+            <div class="col-md-4 mb-4 mb-md-0">
                 <ul class="list-unstyled">
                     <li><a href="#" class="text-white text-decoration-none">FAQ</a></li>
                     <li><a href="#" class="text-white text-decoration-none">Privacy Policy</a></li>
@@ -447,28 +416,25 @@
                     <li><a href="#" class="text-white text-decoration-none">Accessibility Statement</a></li>
                 </ul>
             </div>
-
+    
             <!-- Columna de Contacto y Redes Sociales -->
             <div class="col-md-4">
                 <div class="mb-4">
                     <h4>Contacto</h4>
                     <p>info@sunglasses.com</p>
                     <p>123-456-7890</p>
-                    <p>500 Buenos Aires </p>
-                    <p>San Francisco, CA 84168</p>
+                    <p>500 Buenos Aires</p>
+                    <p>San Isidro, CABA 84168</p>
                 </div>
-                <!-- Columna Redes Sociales -->
-                <div class="col-md-4 text-center text-md-end">
-                    <div class="d-flex justify-content-center justify-content-md-end gap-3">
-                        <a href="#" class="text-white" aria-label="Facebook"><i class="fab fa-facebook fa-lg"></i></a>
-                        <a href="#" class="text-white" aria-label="Instagram"><i class="fab fa-instagram fa-lg"></i></a>
-                        <a href="#" class="text-white" aria-label="LinkedIn"><i class="fab fa-linkedin fa-lg"></i></a>
-                        <a href="#" class="text-white" aria-label="TikTok"><i class="fab fa-tiktok fa-lg"></i></a>
-                    </div>
+                <div class="d-flex gap-3">
+                    <a href="#" class="text-white" aria-label="Facebook"><i class="fab fa-facebook fa-lg"></i></a>
+                    <a href="#" class="text-white" aria-label="Instagram"><i class="fab fa-instagram fa-lg"></i></a>
+                    <a href="#" class="text-white" aria-label="LinkedIn"><i class="fab fa-linkedin fa-lg"></i></a>
+                    <a href="#" class="text-white" aria-label="TikTok"><i class="fab fa-tiktok fa-lg"></i></a>
                 </div>
             </div>
         </div>
-
+    
         <!-- Texto Copyright -->
         <div class="text-center mt-4">
             <p>&copy; <span id="year"></span> E-Commerce. All rights reserved.</p>
@@ -488,4 +454,3 @@
 
 </body>
 </html>
-

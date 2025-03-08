@@ -1,5 +1,4 @@
 
-
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif; /* Tipografía principal */
@@ -390,3 +389,31 @@ section {
     height: 60vh;
 }
 
+/* PRODUCTS DETAILS */
+
+.btn-outline-custom {
+    border-color: white; /* Borde blanco */
+    color: white; /* Texto blanco */
+    background-color: transparent; /* Fondo transparente */
+}
+.btn-outline-custom:hover {
+    background-color: white; /* Fondo blanco al hacer hover */
+    color: black; /* Texto negro al hacer hover */
+}
+.accordion-button:not(.collapsed),
+.accordion-button {
+    background-color: #0d0d0d; /* Fondo negro */
+    color: white; /* Texto blanco */
+}
+.accordion-button:not(.collapsed) {
+    background-color: #0d0d0d; /* Fondo negro cuando está abierto */
+    color: white; /* Texto blanco cuando está abierto */
+}
+.accordion-body {
+    background-color: #0d0d0d; /* Fondo negro */
+    color: white; /* Texto blanco */
+    border-top: none; /* Elimina el borde superior */
+}
+.accordion-item {
+    border: none;
+}

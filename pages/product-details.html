@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <body>
+        
+        <!-- Barra de Envío Gratis -->
+        <div class="bg-black text-white text-center py-2 fw-semibold">
+            FREE SHIPPING ON ORDERS OVER $65
+        </div>
+    
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black"aria-label="Navegacion principal"aria-label="Navegación principal">
+            <div class="container">
+                <!-- Logo -->
+                <a class="navbar-brand" href="index.html">LOGO</a>
+    
+                <!-- Botón de menú en dispositivos pequeños -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Menú de navegación -->
+<div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+    <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link active" href="./index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="./pages/allproducts.html">All Products</a></li>
+        <li class="nav-item"><a class="nav-link" href="./pages/giftcard.html">GIFT CARD</a></li>
+        <li class="nav-item"><a class="nav-link" href="./pages/about.html">About</a></li>
+
+    </ul>
+</div>
+                <!-- Íconos de búsqueda y carrito alineados a la derecha -->
+                <div class="d-flex align-items-center ms-auto">
+                    <a href="#" class="me-3">
+                        <img src="./assets/img/buscador.svg" alt="Buscar">
+                    </a>
+                    <a href="#">
+                        <img src="./assets/img/tienda.svg" alt="Carrito">
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Tarjeta de Producto 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="product-image-1.jpg" class="card-img-top" alt="Producto 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Producto 1</h5>
+                        <p class="card-text">$99.99</p>
+                        <a href="product-details.html?id=1" class="btn btn-primary">Ver detalles</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta de Producto 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="product-image-2.jpg" class="card-img-top" alt="Producto 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Producto 2</h5>
+                        <p class="card-text">$120.00</p>
+                        <a href="product-details.html?id=2" class="btn btn-primary">Ver detalles</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
